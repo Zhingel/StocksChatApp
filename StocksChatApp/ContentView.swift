@@ -18,7 +18,7 @@ struct ContentView: View {
                     } else {
                         ForEach(viewModel.tickers, id: \.symbol) { ticker in
                             NavigationLink {
-                                TickerInfoView()
+                                TickerInfoView(ticker: ticker)
                             } label: {
                                 TickerMiniView(ticker: ticker)
                             }

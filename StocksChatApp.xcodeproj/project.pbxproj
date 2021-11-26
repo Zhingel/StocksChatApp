@@ -16,6 +16,9 @@
 		EE94E5EF2750CAC200C64E33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE94E5EE2750CAC200C64E33 /* Extensions.swift */; };
 		EE94E5F12750CBBC00C64E33 /* TickerMiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE94E5F02750CBBC00C64E33 /* TickerMiniView.swift */; };
 		EE9C99B32750E27100B21ED8 /* TickerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C99B22750E27100B21ED8 /* TickerInfoView.swift */; };
+		EE9C99B62750EA1500B21ED8 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C99B52750EA1500B21ED8 /* TopBarView.swift */; };
+		EE9C99BA2750EF4400B21ED8 /* OffSetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C99B92750EF4400B21ED8 /* OffSetTabView.swift */; };
+		EE9C99BC2750EF6700B21ED8 /* PagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C99BB2750EF6700B21ED8 /* PagerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		EE94E5EE2750CAC200C64E33 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EE94E5F02750CBBC00C64E33 /* TickerMiniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerMiniView.swift; sourceTree = "<group>"; };
 		EE9C99B22750E27100B21ED8 /* TickerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerInfoView.swift; sourceTree = "<group>"; };
+		EE9C99B52750EA1500B21ED8 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		EE9C99B92750EF4400B21ED8 /* OffSetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffSetTabView.swift; sourceTree = "<group>"; };
+		EE9C99BB2750EF6700B21ED8 /* PagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +69,10 @@
 			children = (
 				EE94E5BA274FF44200C64E33 /* StocksChatAppApp.swift */,
 				EE94E5BC274FF44200C64E33 /* ContentView.swift */,
-				EE94E5F02750CBBC00C64E33 /* TickerMiniView.swift */,
-				EE9C99B22750E27100B21ED8 /* TickerInfoView.swift */,
-				EE94E5C8274FF52100C64E33 /* FetchDataStocks.swift */,
+				EE9C99B42750E70900B21ED8 /* Views */,
+				EE9C99B82750EB6200B21ED8 /* ViewModel */,
+				EE9C99B72750EB4800B21ED8 /* Model */,
 				EE94E5EE2750CAC200C64E33 /* Extensions.swift */,
-				EE94E5CA275013DE00C64E33 /* TickerData.swift */,
 				EE94E5BE274FF44400C64E33 /* Assets.xcassets */,
 				EE94E5C0274FF44400C64E33 /* Preview Content */,
 			);
@@ -80,6 +85,34 @@
 				EE94E5C1274FF44400C64E33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE9C99B42750E70900B21ED8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE94E5F02750CBBC00C64E33 /* TickerMiniView.swift */,
+				EE9C99B22750E27100B21ED8 /* TickerInfoView.swift */,
+				EE9C99B52750EA1500B21ED8 /* TopBarView.swift */,
+				EE9C99B92750EF4400B21ED8 /* OffSetTabView.swift */,
+				EE9C99BB2750EF6700B21ED8 /* PagerHelper.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE9C99B72750EB4800B21ED8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE94E5CA275013DE00C64E33 /* TickerData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE9C99B82750EB6200B21ED8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE94E5C8274FF52100C64E33 /* FetchDataStocks.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +189,12 @@
 				EE94E5F12750CBBC00C64E33 /* TickerMiniView.swift in Sources */,
 				EE94E5C9274FF52100C64E33 /* FetchDataStocks.swift in Sources */,
 				EE9C99B32750E27100B21ED8 /* TickerInfoView.swift in Sources */,
+				EE9C99BA2750EF4400B21ED8 /* OffSetTabView.swift in Sources */,
 				EE94E5BD274FF44200C64E33 /* ContentView.swift in Sources */,
 				EE94E5BB274FF44200C64E33 /* StocksChatAppApp.swift in Sources */,
+				EE9C99B62750EA1500B21ED8 /* TopBarView.swift in Sources */,
 				EE94E5CB275013DE00C64E33 /* TickerData.swift in Sources */,
+				EE9C99BC2750EF6700B21ED8 /* PagerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

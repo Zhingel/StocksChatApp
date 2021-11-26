@@ -16,7 +16,7 @@ class FetchDataStocks: ObservableObject {
     func fetchData() {
         let headers = [
             "accept": "application/json",
-            "X-API-KEY": "Zq89ikd3EtS64eZza56I3LQM5qpD5FF4fiXRHdW1"
+            "X-API-KEY": "nrlO9zOH9o8k1D7BtPVbw5MDA62fHv3y5zQb3C6S"
         ]
         let url = "https://yfapi.net/v6/finance/quote?region=US&lang=en&symbols=AAPL%2CMSFT%2CNFLX%2CTSLA%2CBAC%2CWMT%2CFNKO%2CPYPL%2CV%2CAMZN"
         let request = NSMutableURLRequest(url: URL(string: url)!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)

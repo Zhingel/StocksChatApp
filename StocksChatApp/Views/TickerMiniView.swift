@@ -21,7 +21,7 @@ struct TickerMiniView: View {
                     .clipShape(Circle())
                     .padding(5)
                     .clipShape(Circle())
-                Text(ticker.displayName ?? "")
+                Text(ticker.displayName)
                     .foregroundColor(.black)
                 Spacer()
                 Text(String(format: "%.2f", ticker.regularMarketPrice) + "$")

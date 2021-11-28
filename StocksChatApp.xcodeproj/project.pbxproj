@@ -19,6 +19,7 @@
 		EE9C99B62750EA1500B21ED8 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C99B52750EA1500B21ED8 /* TopBarView.swift */; };
 		EE9C99BA2750EF4400B21ED8 /* OffSetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C99B92750EF4400B21ED8 /* OffSetTabView.swift */; };
 		EE9C99BC2750EF6700B21ED8 /* PagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C99BB2750EF6700B21ED8 /* PagerHelper.swift */; };
+		EEBBA28827516C46007F53D2 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBBA28727516C45007F53D2 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		EE9C99B52750EA1500B21ED8 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		EE9C99B92750EF4400B21ED8 /* OffSetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffSetTabView.swift; sourceTree = "<group>"; };
 		EE9C99BB2750EF6700B21ED8 /* PagerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerHelper.swift; sourceTree = "<group>"; };
+		EEBBA28727516C45007F53D2 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				EE94E5F02750CBBC00C64E33 /* TickerMiniView.swift */,
+				EEBBA28727516C45007F53D2 /* SearchBar.swift */,
 				EE9C99B22750E27100B21ED8 /* TickerInfoView.swift */,
 				EE9C99B52750EA1500B21ED8 /* TopBarView.swift */,
 				EE9C99B92750EF4400B21ED8 /* OffSetTabView.swift */,
@@ -194,6 +197,7 @@
 				EE94E5BB274FF44200C64E33 /* StocksChatAppApp.swift in Sources */,
 				EE9C99B62750EA1500B21ED8 /* TopBarView.swift in Sources */,
 				EE94E5CB275013DE00C64E33 /* TickerData.swift in Sources */,
+				EEBBA28827516C46007F53D2 /* SearchBar.swift in Sources */,
 				EE9C99BC2750EF6700B21ED8 /* PagerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

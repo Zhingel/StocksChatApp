@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TickerMiniView: View {
-    var ticker: Result
+    var ticker: TickerElement
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -21,10 +21,10 @@ struct TickerMiniView: View {
                     .clipShape(Circle())
                     .padding(5)
                     .clipShape(Circle())
-                Text(ticker.displayName)
+                Text(ticker.name)
                     .foregroundColor(.black)
                 Spacer()
-                Text(String(format: "%.2f", ticker.regularMarketPrice) + "$")
+                Text(String(format: "%.2f", ticker.symbol) + "$")
                     .foregroundColor(.black)
                     .font(Font.system(size: 18))
                     .bold()

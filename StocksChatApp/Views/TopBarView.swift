@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TopBarView: View {
     @State var currentSelection: Int = 0
-    var ticker: Result
+    var ticker: TickerElement
     var body: some View {
         
         PagerTabView(tint: .black,selection: $currentSelection){
@@ -34,7 +34,7 @@ struct TopBarView: View {
             
             ScrollView {
                 VStack {
-                    Text(ticker.displayName)
+                    Text(ticker.name)
                     Rectangle()
                         .strokeBorder()
                         .frame(height: 300)

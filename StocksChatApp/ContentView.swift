@@ -12,21 +12,25 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationView {
-                ScrollView(.vertical, showsIndicators: false) {
-                    if viewModel.loading {
-                        Text("Loading ...")
-                    } else {
-                        ForEach(viewModel.tickers, id: \.symbol) { ticker in
-                            NavigationLink {
-                                TickerInfoView(ticker: ticker)
-                            } label: {
-                                TickerMiniView(ticker: ticker)
+                VStack {
+                    SearchBar(searchData: viewModel)
+                        
+                    ScrollView(.vertical, showsIndicators: false) {
+                        if viewModel.loading {
+                            Text("Loading ...")
+                        } else {
+                            ForEach(viewModel.tickers, id: \.symbol) { ticker in
+                                NavigationLink {
+                                    TickerInfoView(ticker: ticker)
+                                } label: {
+                                    TickerMiniView(ticker: ticker)
+                                }
+                                
                             }
-                            
                         }
-                    }
-                }.navigationBarTitleDisplayMode(.inline)
-                .navigationTitle("Мой портфель")
+                    }.navigationBarTitleDisplayMode(.inline)
+                    .navigationTitle("Каталог")
+                }
              
             }
             .tabItem { /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Item Label@*/Text("Label")/*@END_MENU_TOKEN@*/ }

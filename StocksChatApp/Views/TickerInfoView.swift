@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TickerInfoView: View {
-    var ticker: Result
+    var ticker: TickerElement
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         TopBarView(ticker: ticker)
-        .navigationTitle(ticker.displayName)
+        .navigationTitle(ticker.name)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: Button(action: {
             self.presentationMode.wrappedValue.dismiss()
